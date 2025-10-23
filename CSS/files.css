@@ -576,6 +576,7 @@ main .sections .stats .row-1 .details, .row-2 .details, .row-3 .details, .row-4 
     justify-content: space-between;
     align-items: flex-start;
     gap: 5px;
+    font-size: clamp(0.750rem, 2.5vw, 1rem);
 }
 
 main .sections .stats .row-1 .details span:last-of-type, .row-2 .details span:last-of-type, .row-3 .details span:last-of-type, .row-4 .details span:last-of-type {
@@ -584,6 +585,7 @@ main .sections .stats .row-1 .details span:last-of-type, .row-2 .details span:la
 main .sections .stats .row-1 span, .row-2 span, .row-3 span, .row-4 span {
     align-self: center;
     color: #888;
+    font-size: clamp(0.750rem, 2.5vw, 1rem);
 }
 
 main .sections .stats a {
@@ -632,12 +634,21 @@ main .sections .stats a:hover::before {
         grid-template-rows: 1fr;
         gap: 20px;
     }
+    main .sections .stats {
+        min-width: 250px;
+    }
+
 }
 
 @media (max-width: 576px) {
     main .sections .files {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+    main .sections .stats {
+        min-width: 250px;
     }
 }
 

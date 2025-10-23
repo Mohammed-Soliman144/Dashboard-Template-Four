@@ -59,74 +59,74 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log("backupRadio", "=>", backupRadio);
 
         // Read Data From LocalStorage
-        if(settingObj.textarea.txtarea)
+        if(settingObj.textarea?.txtarea)
             area.value = settingObj.textarea.txtarea;
         
 
-        if(settingObj.inputCheckBox.siteChkBox) 
+        if(settingObj.inputCheckBox?.siteChkBox) 
             siteChkBox.checked = settingObj.inputCheckBox.siteChkBox;
         
 
-        if(settingObj.inputText.first)
+        if(settingObj.inputText?.first)
             infoText[0].value = settingObj.inputText['first'];
         
 
-        if(settingObj.inputText.last)
+        if(settingObj.inputText?.last)
             infoText[1].value = settingObj.inputText['last'];
         
 
-        if(settingObj.inputText.email)
+        if(settingObj.inputText?.email)
             infoText[2].value = settingObj.inputText['email'];
         
 
-        if(settingObj.inputCheckBox.securityChkBox) 
+        if(settingObj.inputCheckBox?.securityChkBox) 
             securityChkBox.checked = settingObj.inputCheckBox.securityChkBox;
         
 
-        if(settingObj.inputText.twitter) 
+        if(settingObj.inputText?.twitter) 
             socialText[0].value = settingObj.inputText['twitter'];
         
 
-        if(settingObj.inputText.facebook) 
+        if(settingObj.inputText?.facebook) 
             socialText[1].value = settingObj.inputText['facebook'];
         
-        if(settingObj.inputText.linkedin) 
+        if(settingObj.inputText?.linkedin) 
             socialText[2].value = settingObj.inputText['linkedin'];
         
-        if(settingObj.inputText.youtube) 
+        if(settingObj.inputText?.youtube) 
             socialText[3].value = settingObj.inputText['youtube'];
         
 
         
         //  input[name="chBoxItems"]');
-        if(settingObj.inputCheckBox.chBoxQuick) {
+        if(settingObj.inputCheckBox?.chBoxQuick) {
             widgetChkBox[0].checked = settingObj.inputCheckBox.chBoxQuick;
             // widgetChkBox[0].checked = settingObj.inputCheckBox.chBoxQuick;
-            console.log(widgetChkBox);
+            // console.log(widgetChkBox);
         }
 
         
     
-        if(settingObj.inputCheckBox.chBoxYearly) 
+        if(settingObj.inputCheckBox?.chBoxYearly) 
             widgetChkBox[1].checked = settingObj.inputCheckBox.chBoxYearly;
         
     
-        if(settingObj.inputCheckBox.chBoxTickets) 
+        if(settingObj.inputCheckBox?.chBoxTickets) 
             widgetChkBox[2].checked = settingObj.inputCheckBox.chBoxTickets;
         
-        if(settingObj.inputCheckBox.chBoxNews) 
+        if(settingObj.inputCheckBox?.chBoxNews) 
             widgetChkBox[3].checked = settingObj.inputCheckBox.chBoxNews;
         
     
-        if(settingObj.inputCheckBox.chBoxTasks) 
+        if(settingObj.inputCheckBox?.chBoxTasks) 
             widgetChkBox[4].checked = settingObj.inputCheckBox.chBoxTasks;
         
     
-        if(settingObj.inputCheckBox.chBoxItems) 
+        if(settingObj.inputCheckBox?.chBoxItems) 
             widgetChkBox[5].checked = settingObj.inputCheckBox.chBoxItems;
         
     
-        if(settingObj.inputRadio.radioSelected)
+        if(settingObj.inputRadio?.radioSelected)
             backupRadio.forEach(choice => {
                 if(choice.id === settingObj.inputRadio.radioSelected) {
                     choice.checked = true;

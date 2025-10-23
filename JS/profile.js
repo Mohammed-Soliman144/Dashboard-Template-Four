@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const job_checkBox = document.getElementById('chBoxJob');
     const bill_checkBox = document.getElementById('chBoxBill');
 
-    console.log(general_checkBox);
-        console.log(personal_checkBox);
-        console.log(job_checkBox);
-        console.log(bill_checkBox);
-        // console.log(childSpans);
+    // console.log(general_checkBox);
+    // console.log(personal_checkBox);
+    // console.log(job_checkBox);
+    // console.log(bill_checkBox);
+    // console.log(childSpans);
 
     allSpan.forEach(span => {
         // const general_checkBox = span.querySelector('input[name="chBoxGen"]');
@@ -43,16 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log(childSpans);
 
         // Read User Data From Local Storage
-        if(userObject.profileObj.generalCheckBox){
+        if(userObject.profileObj?.generalCheckBox){
             general_checkBox.checked = userObject.profileObj.generalCheckBox;
         }
-        if(userObject.profileObj.personalCheckBox){
+        if(userObject.profileObj?.personalCheckBox){
             personal_checkBox.checked = userObject.profileObj.personalCheckBox;
         }
-        if(userObject.profileObj.jobCheckBox){
+        if(userObject.profileObj?.jobCheckBox){
             job_checkBox.checked = userObject.profileObj.jobCheckBox;
         }
-        if(userObject.profileObj.billCheckBox){
+        if(userObject.profileObj?.billCheckBox){
             bill_checkBox.checked = userObject.profileObj.billCheckBox;
         }
 

@@ -8,13 +8,17 @@ const allLinks = document.querySelectorAll('header.main-header ul li a');
 
 allLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+        sessionStorage.setItem('previousLink', sessionStorage.getItem('currentLink'));
         sessionStorage.setItem('currentLink', e.target.getAttribute('href'));
-        sessionStorage.setItem('previousLink', window.location.pathname.substring(1));
+        // sessionStorage.setItem('previousLink', window.location.pathname.substring(1));
         if(document.startViewTransition){
             e.preventDefault();
             document.startViewTransition(() => {
                 window.location = link.getAttribute('href');
             })
+        } else {
+            e.preventDefault();
+            window.location = link.getAttribute('href');
         }
     })
 });
@@ -30,7 +34,14 @@ allLinks.forEach(link => {
 const currentLink = document.querySelector(`header.main-header ul li a[href="${sessionStorage.getItem('currentLink')}"]`);
 
 document.addEventListener('DOMContentLoaded', () => {
-    if(!currentLink) return;
+    if(!currentLink) {
+        let firstPath =  !window.location.pathname.substring(1) ? "index.html" : window.location.pathname.substring(1);
+        sessionStorage.setItem('currentLink', firstPath);
+        document.querySelector(`header.main-header ul li a[href="${firstPath}"]`)?.classList.add('active');
+        document.querySelector(`header.main-header ul li a[href="${firstPath}"]`).closest('li')?.classList.add('active');
+        // console.log("Done");
+        return;
+    };
     allLinks.forEach(link => {
         link.classList.remove('active');
         // Optional Chaining ? => which means if you try access propery or method inside object and object is null or not exist yet stop executing without throw error uncaught type error
