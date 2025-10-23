@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Library - Minified CSS File all.minified.css -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="CSS/settings.css" />
+    <!-- Framework CSS File - Other CSS Components Framework -->
+    <link rel="stylesheet" href="CSS/framework.css" />
+    <!-- Google Fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Dashbord HTML File -->
+    <header class="main-header">
+      <nav>
+        <span>Elzero</span>
+        <ul>
+          <li><a href="index.html">dashboard</a></li>
+          <li><a href="settings.html">settings</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="courses.html">courses</a></li>
+          <li><a href="friends.html">friends</a></li>
+          <li><a href="files.html">files</a></li>
+          <li><a href="plans.html">plans</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <header class="sub-header">
+        <form class="left" action="" method="get">
+          <input type="search" name="" id="" placeholder="Type A Keyword" />
+        </form>
+        <div class="right">
+          <img src="IMG/Dashboard/avatar.png" alt="Avatar" />
+        </div>
+      </header>
+      <div class="container">
+        <h1>Settings</h1>
+        <section>
+          <article>
+            <header class="artcle-header">
+              <h2>Site Control</h2>
+              <p>Control The Website If There Is Maintenance</p>
+            </header>
+            <form action="" method="get">
+              <h3>Website Control</h3>
+              <div class="input">
+                <div class="sub-input">
+                  <label>Open/Close Website And Type The Reason</label>
+                  <span class="checkbox">
+                    <input type="checkbox" name="chBoxCon" id="chBoxCon" />
+                    <span class="checked"></span>
+                  </span>
+                </div>
+                <textarea
+                  name=""
+                  id="textarea"
+                  placeholder="close message content"
+                ></textarea>
+              </div>
+            </form>
+          </article>
+          <article>
+            <header class="artcle-header">
+              <h2>General Info</h2>
+              <p>General Information About Your Account</p>
+            </header>
+            <form action="" method="get">
+              <div class="input">
+                <label for="first">First Name</label>
+                <input type="text" id="first" placeholder="First Name" />
+              </div>
+              <div class="input">
+                <label for="last">Last Name</label>
+                <input type="text" id="last" placeholder="Last Name" />
+              </div>
+              <div class="input">
+                <label for="email">Email</label>
+                <div class="sub-input">
+                  <input
+                    type="email"
+                    name=""
+                    id="email"
+                    value="o@nn.sa"
+                    disabled
+                  />
+                  <a href="#">change</a>
+                </div>
+              </div>
+            </form>
+          </article>
+          <article>
+            <header>
+              <h2>Security Info</h2>
+              <p>Security Information About Your Account</p>
+            </header>
+            <form action="" method="get">
+              <div class="input">
+                <div class="sub-input">
+                  <h3>Password</h3>
+                  <span>Last Change On 25/10/2021</span>
+                </div>
+                <a href="#">Change</a>
+              </div>
+              <div class="input">
+                <div class="sub-input">
+                  <h3>Two-Factor Authentication</h3>
+                  <span>Enable/Disable The Feature</span>
+                </div>
+                <span class="checkbox">
+                  <input type="checkbox" name="chBoxAuth" id="chBoxAuth" />
+                  <span class="checked"></span>
+                </span>
+              </div>
+              <div class="input">
+                <div class="sub-input">
+                  <h3>Devices</h3>
+                  <span>Check The Login Devices List</span>
+                </div>
+                <a href="#">Devices</a>
+              </div>
+            </form>
+          </article>
+          <article>
+            <header>
+              <h2>Social Info</h2>
+              <p>Social Media Information</p>
+            </header>
+            <form action="" method="get">
+              <div class="input">
+                <input
+                  type="text"
+                  id="twitter"
+                  placeholder="Twitter Username"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="facebook"
+                  placeholder="Facebook Username"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="linkedin"
+                  placeholder="Linkedin Username"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  id="youtube"
+                  placeholder="Youtube Username"
+                />
+              </div>
+            </form>
+          </article>
+          <article>
+            <header>
+              <h2>Widgets Control</h2>
+              <p>Show/Hide Widgets</p>
+            </header>
+            <form action="" method="get">
+              <div class="input">
+                <input type="checkbox" name="chBoxQuick" id="chBoxQuick" />
+                <label for="chBoxQuick">Quick Draft</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="chBoxYearly" id="chBoxYearly" />
+                <label for="chBoxYearly">Yearly Targets</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="chBoxTickets" id="chBoxTickets" />
+                <label for="chBoxTickets">Tickets Statistics</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="chBoxNews" id="chBoxNews" />
+                <label for="chBoxNews">Latest News</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="chBoxTasks" id="chBoxTasks" />
+                <label for="chBoxTasks">Latest Tasks</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="chBoxItems" id="chBoxItems" />
+                <label for="chBoxItems">Top Search Items</label>
+              </div>
+            </form>
+          </article>
+          <article>
+            <header>
+              <h2>Backup Manager</h2>
+              <p>Control Backup Time And Location</p>
+            </header>
+            <form action="" method="get">
+              <div class="input">
+                <input type="radio" name="radBtnBackup" id="daily" />
+                <label for="daily">Daily</label>
+              </div>
+              <div class="input">
+                <input type="radio" name="radBtnBackup" id="weekly" />
+                <label for="weekly">Weekly</label>
+              </div>
+              <div class="input">
+                <input type="radio" name="radBtnBackup" id="monthly" />
+                <label for="monthly">Monthly</label>
+              </div>
+            </form>
+            <footer>
+              <span>Megaman</span>
+              <span class="selected">Zero</span>
+              <span>Sigma</span>
+            </footer>
+          </article>
+        </section>
+      </div>
+    </main>
+    <script src="JS/settings.js"></script>
+    <script src="JS/app.js"></script>
+  </body>
+</html>

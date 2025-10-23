@@ -1,0 +1,689 @@
+
+/* Start Standard Global Rules */
+
+/* A- Start Global Variables */
+:root {
+    --bgc-main: #F1F5F9;
+    --bgc-header: #FFFFFF;
+    --bgc-input: #EEEEEE;
+    --bgc-selection: #FAF7F7;
+    --bgc-section: #F6F6F6;
+    --bgc-btns: #0D69D5;
+    --horizontal-padding: 1rem;
+    --vertical-padding: 4.375rem;
+}
+
+/* B- Reset All Elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* C- Body Element */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    /* Customize body */
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+/* D- Standard Container */
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding-inline: 1rem;
+    padding-bottom: 20px;
+}
+
+/* E- Standard Media Queries */
+/* F- Standard Font Sizes */
+
+/* End Standard Global Rules */
+
+
+
+/* Start Main Header <header> */
+
+.main-header {
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid var(--bgc-section);
+    box-shadow: 2px 2px 4px 2px var(--bgc-section);
+    z-index: 1;
+}
+
+.main-header nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.main-header nav span {
+    font-size: clamp(1.125rem, 1.50vw, 1.25rem);
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    position: relative;
+    align-self: center;
+    margin: 25px;
+}
+
+.main-header nav span::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    outline: 4px solid #fff;
+    position: absolute;
+    bottom: -16px;
+    left: calc((90px - 10px) * 0.25);
+    z-index: 1;
+}
+
+.main-header nav span::after {
+    content: '';
+    width: 90px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -12px;
+    left: calc(-90px * 0.25);
+}
+
+.main-header nav ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-inline: 15px;
+}
+
+.main-header nav ul li {
+    width: 100%
+}
+
+.main-header nav ul li a {
+    text-transform: capitalize;
+    font-size: clamp(0.875rem, 1.25vw, 1rem);
+    padding-inline: 35px;
+    padding-block: 10px;
+    position: relative;
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.main-header nav ul li.active a {
+    background-color: var(--bgc-section);
+    border-radius: 6px;
+}
+
+.main-header nav ul li a:hover {
+    cursor: pointer;
+    background-color: var(--bgc-section);
+    border-radius: 6px;
+}
+
+.main-header nav ul li:first-of-type a::before {
+    content: '\f080';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+
+.main-header nav ul li:nth-of-type(2) a::before {
+    content: '\f013';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(3) a::before {
+    content: '\f007';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(4) a::before {
+    content: '\f542';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(5) a::before {
+    content: '\f19d';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(6) a::before {
+    content: '\f2bd';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(7) a::before {
+    content: '\f15b';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:last-of-type a::before {
+    content: '\f09d';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+} 
+
+@media (min-width: 768px) {
+    .main-header {
+        min-width: 175px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header {
+        width: 65px;
+    }
+
+    .main-header nav span::before, 
+    .main-header nav span::after {
+        display: none;
+    }
+    .main-header nav ul {
+        align-items: center;
+    }
+
+    .main-header nav ul li a {
+        color: transparent;
+        padding: 10px;
+    }
+
+    .main-header nav span {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-height: 482px){
+    .main-header {
+        position: relative;
+    }
+    .main-header nav {
+        position: sticky;
+        top: 0px;
+    }
+}
+/* End Main Header  <header> */
+
+
+
+/* Start Main Element <main> */
+main {
+    background-color: var(--bgc-main);
+    position: relative;
+}
+
+
+/* Start sub header inside main */
+main .sub-header {
+    max-height: 85px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border: 1px solid var(--bgc-section);
+    box-shadow: 2px 2px 4px 2px var(--bgc-section);
+}
+
+
+main .sub-header .left {
+    flex-basis: 80%;
+    position: relative;
+}
+
+main .sub-header .left::after {
+    content: '\f002';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 17px;
+    color: #CDCDCD;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+main .sub-header .left input {
+    width: 165px;
+    border: 2px solid #CDCDCD;
+    font-size: clamp(0.875rem, 1.25vw, 0.875rem);
+    border-radius: 6px;
+    outline: none;
+    padding: 10px 0 10px 30px;
+    transition: width 0.6s ease-in-out 0s;
+}
+
+main .sub-header .left input:focus  {
+    width: 190px;
+}
+
+main .sub-header .left input:focus::placeholder{
+    visibility: hidden;
+}
+
+main .sub-header .right {
+    flex-basis: 10%;
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .sub-header .right::before {
+    content: '\f0f3';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 25px;
+    color: #0D69D5;
+    position: absolute;
+    top: 15px;
+    right: 55px;
+}
+
+main .sub-header .right::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F44336;
+    position: absolute;
+    top: 15px;
+    right: 48px;
+}
+
+main .sub-header .right img {
+    aspect-ratio: 4/4;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* End sub header inside main */
+
+
+/* start container inside main */
+
+/* Start h1 */
+main h1 {
+    width: fit-content;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-transform: capitalize;
+    position: relative;
+    padding: 0;
+}
+
+main h1::after { 
+    content: '';
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    background-image: linear-gradient(to right, #000 0%, #000 40%, #fff 40%, #fff);
+}
+/* End h1 */
+
+
+/* Start Projects */
+main .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+
+main .projects article {
+    background-color: #fff;
+    border-radius: 6px;
+    /* customize */
+    padding: 20px 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+main .projects article header, figure, footer {
+    width: 100%;
+}
+
+main .projects article header {
+    position: relative;
+}
+
+main .projects article header::after { 
+    content: '15/10/2021';
+    font-size: clamp(0.80rem, 1.25vw, 0.80rem);
+    color: #777;
+    position: absolute;
+    top: -8px;
+    right: 0;
+}
+
+main .projects article header span {
+    display: inline-block;
+    font-size: clamp(1rem, 1.50vw, 1.125rem);
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    padding-bottom: 12px;
+}
+
+main .projects article header p {
+    font-size: clamp(0.875rem, 1.50vw, 1rem);
+    text-transform: capitalize;
+    color: #777;
+}
+
+main .projects article figure {
+    padding-block: 25px 12px;
+    border-bottom: 2px solid #EEE;
+    display: flex;
+}
+
+main .projects article figure img {
+    aspect-ratio: 4 / 4;
+    width: 55px;
+    object-fit: contain;
+    border: 2.5px solid #FFF;
+    border-radius: 50%;
+    position: relative;
+}
+main .projects article figure img:hover {
+    cursor: pointer;
+    z-index: 1;
+}
+
+main .projects article figure img:nth-of-type(2) {
+    left: -15px;
+}
+
+main .projects article figure img:nth-of-type(3) {
+    left: -30px;
+}
+
+main .projects article figure img:nth-of-type(4) {
+    left: -45px;
+}
+
+main .projects article figure img:nth-of-type(5) {
+    left: -60px;
+}
+
+main .projects article footer .features {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #EEE;
+}
+
+main .projects article footer .features span {
+    display: inline-block;
+    font-size: clamp(0.875rem, 1.50vw, 0.875rem);
+    background-color: #EEE;
+    text-transform: capitalize;
+    padding: 6px;
+    border-radius: 6px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+} 
+
+
+main .projects article footer .price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+main .projects article footer .price::before {
+    content: '';
+    background-image: linear-gradient(to right, #F44336 0%, #F44336 45%, #EEE 45%, #EEE 100%);
+    width: 200px;
+    height: 8px;
+    border-radius: 6px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+main .projects article:nth-of-type(2) footer .price::before {
+    background-image: linear-gradient(to right, #22C55E 0%, #22C55E 85%, #EEE 85%, #EEE 100%);
+}
+
+main .projects article:nth-of-type(3) footer .price::before {
+    background-image: linear-gradient(to right, #0075FF 0%, #0075FF 100%);
+}
+
+main .projects article:nth-of-type(4) footer .price::before {
+    background-image: linear-gradient(to right, #22C55E 0%, #22C55E 65%, #EEE 65%, #EEE 100%);
+}
+
+main .projects article:nth-of-type(5) footer .price::before {
+    background-image: linear-gradient(to right, #22C55E 0%, #22C55E 75%, #EEE 75%, #EEE 100%);
+}
+
+main .projects article:nth-of-type(6) footer .price::before {
+    background-image: linear-gradient(to right, #F44336 0%, #F44336 40%, #EEE 40%, #EEE 100%);
+}
+main .projects article:nth-of-type(7) footer .price::before {
+    background-image: linear-gradient(to right, #22C55E 0%, #22C55E 70%, #EEE 70%, #EEE 100%);
+}
+main .projects article:nth-of-type(8) footer .price::before {
+    background-image: linear-gradient(to right, #22C55E 0%, #22C55E 60%, #EEE 60%, #EEE 100%);
+}
+
+main .projects article:nth-of-type(9) footer .price::before {
+    background-image: linear-gradient(to right, #22C55E 0%, #22C55E 90%, #EEE 90%, #EEE 100%);
+}
+
+main .projects article footer .price::after {
+    content: '\24';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #888;
+    position: absolute;
+    top: 15px;
+    right: 34px;
+} 
+main .projects article:nth-child(3) footer .price::after {
+    right: 28px;
+}
+main .projects article:nth-child(n+5):nth-child(-n+6) footer .price::after {
+    right: 26px;
+}
+main .projects article:nth-child(9) footer .price::after {
+    right: 26px;
+} 
+
+main .projects article footer .price span {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: clamp(0.875rem, 1.50vw, 0.875rem);
+    color: #888;
+    position: relative;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    main .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-rows: 1fr;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+    main .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        grid-template-rows: 1fr;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+    main .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-rows: 1fr;
+    }
+}
+@media (max-width: 786px) {
+    .container {
+        max-width: 740px;
+    }
+    main .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: 1fr;
+    }
+    main .projects footer .features {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    main .projects footer .features span {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    main .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: 1fr;
+    }
+    main .projects article figure {
+        display: flex;
+    }
+    
+    main .projects footer .features {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 8px; 
+    }
+    main .projects footer .features span {
+        align-self: flex-start;
+    }
+
+    main .projects footer .price {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 20px 0;
+        position: relative;
+    }
+    main .projects article footer .price::before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main .projects article footer .price::after {
+        display: none;
+    }
+
+    main .projects footer .price span {
+        position: relative;
+        bottom: -15px;
+    }
+
+    main .projects footer .price span::after {
+        content: '\24';
+        font-family: 'Font Awesome 7 Free';
+        font-weight: 900;
+        font-size: 15px;
+        color: #888;
+        position: absolute;
+        top: 15px;
+        left: -11px;
+    }
+}
+
+/* End Projects */

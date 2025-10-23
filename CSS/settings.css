@@ -1,0 +1,1256 @@
+
+/* Start Standard Global Rules */
+
+/* A- Start Global Variables */
+:root {
+    --bgc-main: #F1F5F9;
+    --bgc-header: #FFFFFF;
+    --bgc-input: #EEEEEE;
+    --bgc-selection: #FAF7F7;
+    --bgc-section: #F6F6F6;
+    --bgc-btns: #0D69D5;
+    --horizontal-padding: 1rem;
+    --vertical-padding: 4.375rem;
+}
+
+/* B- Reset All Elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* C- Body Element */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    /* Customize body */
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+/* D- Standard Container */
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding-inline: 1rem;
+    padding-bottom: 20px;
+}
+
+/* E- Standard Media Queries */
+/* F- Standard Font Sizes */
+
+/* End Standard Global Rules */
+
+
+
+/* Start Main Header <header> */
+
+.main-header {
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid var(--bgc-section);
+    box-shadow: 2px 2px 4px 2px var(--bgc-section);
+    z-index: 1;
+}
+
+.main-header nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.main-header nav span {
+    font-size: clamp(1.125rem, 1.50vw, 1.25rem);
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    position: relative;
+    align-self: center;
+    margin: 25px;
+}
+
+.main-header nav span::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    outline: 4px solid #fff;
+    position: absolute;
+    bottom: -16px;
+    left: calc((90px - 10px) * 0.25);
+    z-index: 1;
+}
+
+.main-header nav span::after {
+    content: '';
+    width: 90px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -12px;
+    left: calc(-90px * 0.25);
+}
+
+.main-header nav ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-inline: 15px;
+}
+
+.main-header nav ul li {
+    width: 100%
+}
+
+.main-header nav ul li a {
+    text-transform: capitalize;
+    font-size: clamp(0.875rem, 1.25vw, 1rem);
+    padding-inline: 35px;
+    padding-block: 10px;
+    position: relative;
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.main-header nav ul li.active a {
+    background-color: var(--bgc-section);
+    border-radius: 6px;
+}
+
+.main-header nav ul li a:hover {
+    cursor: pointer;
+    background-color: var(--bgc-section);
+    border-radius: 6px;
+}
+
+.main-header nav ul li:first-of-type a::before {
+    content: '\f080';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+
+.main-header nav ul li:nth-of-type(2) a::before {
+    content: '\f013';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(3) a::before {
+    content: '\f007';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(4) a::before {
+    content: '\f542';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(5) a::before {
+    content: '\f19d';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(6) a::before {
+    content: '\f2bd';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:nth-of-type(7) a::before {
+    content: '\f15b';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.main-header nav ul li:last-of-type a::before {
+    content: '\f09d';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+} 
+
+@media (min-width: 768px) {
+    .main-header {
+        min-width: 175px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header {
+        width: 65px;
+    }
+
+    .main-header nav span::before, 
+    .main-header nav span::after {
+        display: none;
+    }
+    .main-header nav ul {
+        align-items: center;
+    }
+
+    .main-header nav ul li a {
+        color: transparent;
+        padding: 10px;
+    }
+
+    .main-header nav span {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-height: 482px){
+    .main-header {
+        position: relative;
+    }
+    .main-header nav {
+        position: sticky;
+        top: 0px;
+    }
+}
+/* End Main Header  <header> */
+
+
+
+/* Start Main Element <main> */
+main {
+    background-color: var(--bgc-main);
+    position: relative;
+}
+
+
+/* Start sub header inside main */
+main .sub-header {
+    max-height: 85px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border: 1px solid var(--bgc-section);
+    box-shadow: 2px 2px 4px 2px var(--bgc-section);
+}
+
+
+main .sub-header .left {
+    flex-basis: 80%;
+    position: relative;
+}
+
+main .sub-header .left::after {
+    content: '\f002';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 17px;
+    color: #CDCDCD;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+main .sub-header .left input {
+    width: 165px;
+    border: 2px solid #CDCDCD;
+    font-size: clamp(0.875rem, 1.25vw, 0.875rem);
+    border-radius: 6px;
+    outline: none;
+    padding: 10px 0 10px 30px;
+    transition: width 0.6s ease-in-out 0s;
+}
+
+main .sub-header .left input:focus  {
+    width: 190px;
+}
+
+main .sub-header .left input:focus::placeholder{
+    visibility: hidden;
+}
+
+main .sub-header .right {
+    flex-basis: 10%;
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main .sub-header .right::before {
+    content: '\f0f3';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 25px;
+    color: #0D69D5;
+    position: absolute;
+    top: 15px;
+    right: 55px;
+}
+
+main .sub-header .right::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F44336;
+    position: absolute;
+    top: 15px;
+    right: 48px;
+}
+
+main .sub-header .right img {
+    aspect-ratio: 4/4;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* End sub header inside main */
+
+
+/* start container inside main */
+
+/* Start h1 */
+main h1 {
+    width: fit-content;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-transform: capitalize;
+    position: relative;
+    padding: 0;
+}
+
+main h1::after { 
+    content: '';
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    background-image: linear-gradient(to right, #000 0%, #000 40%, #fff 40%, #fff);
+}
+/* End h1 */
+
+
+/* Start Settings */
+.container section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.container section article {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 15px 20px 15px;
+}
+
+.container section article header, form, footer {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+/* First Articles */
+.container section article {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.container section article header {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    max-height: 51px; 
+}
+
+.container section article header h2 {
+    font-size: clamp(1.25rem, 3vw, 1.50rem);
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+.container section article header p {
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    color: #666;
+    text-transform: capitalize;
+}
+
+.container section article:first-child form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.container section article:first-child form .input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.container section article:first-child form .input .sub-input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container section article:first-child form .input .sub-input label {
+    flex-basis: 70%;
+    font-size: clamp(0.65rem, 1.25vw, 1rem);
+    color: #666;
+    text-transform: capitalize;
+}
+
+.container section article:first-child form .input .sub-input .checkbox {
+    flex-basis: 30%;
+    position: relative;
+}
+
+.container section article:first-child form .input .sub-input .checkbox  input[type='checkbox'] {
+    all: unset;
+    width: 80px;
+    max-width: 80;
+    height: 22px;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
+.container section article:first-child form .input .sub-input .checkbox input[type='checkbox']:checked {
+    background-color: #0075FF;
+}
+.container section article:first-child form .input .sub-input .checkbox input[type='checkbox']:not(:checked) {
+    background-color: #CCC;
+}
+
+.container section article:first-child form .input .sub-input .checked::before {
+    visibility: hidden;
+    content: '\f00d';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.5px;
+    left: 3px;
+    z-index: 1;
+}
+.container section article:first-child form .input .sub-input .checked::after {
+    visibility: hidden;
+    content: '\f00c';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #0075FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.5px;
+    right: 3px;
+    z-index: 1;
+}
+
+.container section article:first-child form .input .sub-input .checkbox input[type='checkbox']:checked + .checked::after {
+    animation: pop-up 0.4s ease-in-out 0s 1 alternate both;
+}
+
+.container section article:first-child form .input .sub-input .checkbox input[type='checkbox']:not(:checked) + .checked::before {
+    animation: pop-up 0.4s ease-in-out 0s 1 alternate-reverse both;
+}
+
+
+.container section article:first-child form .input textarea {
+    all: unset;
+    flex-basis: 100%;
+    width: calc(100% - 10px);
+    min-height: 150px;
+    border: 2px solid #EEE;
+    border-radius: 6px;
+    padding: 8px 0 0 8px;
+}
+
+.container section article:first-child form .input textarea:placeholder-shown { 
+    text-transform: capitalize;
+}
+
+/* Second Article */
+.container section article:nth-child(2) form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.container section article:nth-child(2) form .input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.container section article:nth-child(2) form .input input[type='text'] {
+    all: unset;
+    width: calc(100% - 10px);
+    height: 20px;
+    font-size: clamp(1rem, 1.25vw, 1rem);
+    color: #666;
+    border: 2px solid #EEE;
+    border-radius: 6px;
+    padding: 10px 0 10px 8px;
+} 
+
+.container section article:nth-child(2) form .input input[type='text']:placeholder-shown {
+    text-transform: capitalize;
+} 
+
+.container section article:nth-child(2) form .input label {
+    font-size: clamp(1rem, 1.25vw, 1rem);
+    color: #666;
+    text-transform: capitalize;
+}
+
+
+.container section article:nth-child(2) form .input .sub-input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container section article:nth-child(2) form .input .sub-input label {
+    font-size: clamp(1rem, 1.25vw, 1rem);
+    color: #666;
+    text-transform: capitalize;
+}
+
+.container section article:nth-child(2) form .input .sub-input input[type='email'] {
+    flex-basis: 60%;
+    all: unset;
+    height: 15px;
+    font-size: clamp(1rem, 1.25vw, 1rem);
+    color: #666;
+    background-color: #F0F4F8;
+    border: 2px solid #EEE;
+    border-radius: 6px;
+    padding: 10px 0 10px 8px;
+    cursor: not-allowed;
+}
+
+.container section article:nth-child(2) form .input .sub-input a {
+    flex-basis: 40%;
+    min-width: 60px;
+    align-self: center;
+    color: #0075FF;
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+/* Third Article */
+
+.container section article:nth-child(3) form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.container section article:nth-child(3) form .input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-block: 20px;
+    border-bottom: 2px solid #EEE;
+}
+
+
+.container section article:nth-child(3) form .input:nth-child(2) .checkbox {
+    align-self: flex-end;
+    position: relative;
+}
+
+.container section article:nth-child(3) form .input:nth-child(2) input[type='checkbox'] {
+    all: unset;
+    width: 80px;
+    height: 22px;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
+.container section article:nth-child(3) form .input:nth-child(2) input[type='checkbox']:checked {
+    background-color: #0075FF;
+}
+.container section article:nth-child(3) form .input:nth-child(2) input[type='checkbox']:not(:checked) {
+    background-color: #CCC;
+}
+
+.container section article:nth-child(3) form .input:nth-child(2) .checked::before {
+    visibility: hidden;
+    content: '\f00d';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.5px;
+    left: 3px;
+    z-index: 1;
+}
+.container section article:nth-child(3) form .input:nth-child(2) .checked::after {
+    visibility: hidden;
+    content: '\f00c';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #0075FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.5px;
+    right: 3px;
+    z-index: 1;
+}
+
+.container section article:nth-child(3) form .input:nth-child(2) input[type='checkbox']:checked + .checked::after {
+    animation: pop-up 0.4s ease-in-out 0s 1 alternate both;
+}
+
+.container section article:nth-child(3) form .input:nth-child(2) input[type='checkbox']:not(:checked) + .checked::before {
+    animation: pop-up 0.4s ease-in-out 0s 1 alternate-reverse both;
+}
+
+.container section article:nth-child(3) form .input:last-child {
+    border: none;
+}
+
+.container section article:nth-child(3) form .input a {
+    flex-basis: 40%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 8px;
+    border-radius: 12px;
+    color: #FFF;
+    background-color: #0075FF;
+    font-size: clamp(0.9rem, 1.25vw, 0.9rem);
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer; 
+}
+.container section article:nth-child(3) form .input:last-of-type a {
+    background-color: #EEE;
+    color: #444;
+} 
+
+.container section article:nth-child(3) form .input .sub-input {
+    flex-basis: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.container section article:nth-child(3) form .input .sub-input h3 {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.container section article:nth-child(3) form .input .sub-input span {
+    font-size: clamp(0.9rem, 1.25vw, 0.90rem);
+    color: #666;
+    text-transform: capitalize;
+}
+
+/* Fourth Article */
+.container section article:nth-child(4) form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.container section article:nth-child(4) form .input {
+    flex-basis: calc(100% - 45px);
+    width: calc(100% - 45px);
+    max-height: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+}
+
+.container section article:nth-child(4) form .input:first-child::after {
+    content: '\f099';
+    font-family: 'Font Awesome 7 Brands';
+    font-weight: 900;
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.container section article:nth-child(4) form .input:first-child::before {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #d5d3d3;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.container section article:nth-child(4) form .input:nth-child(2)::after {
+    content: '\f082';
+    font-family: 'Font Awesome 7 Brands';
+    font-weight: 900;
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);    
+}
+
+.container section article:nth-child(4) form .input:nth-child(2)::before {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #d5d3d3;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.container section article:nth-child(4) form .input:nth-child(3)::after {
+    content: '\f08c';
+    font-family: 'Font Awesome 7 Brands';
+    font-weight: 900;
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.container section article:nth-child(4) form .input:nth-child(3)::before {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #d5d3d3;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.container section article:nth-child(4) form .input:nth-child(4)::after {
+    content: '\f167';
+    font-family: 'Font Awesome 7 Brands';
+    font-weight: 900;
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.container section article:nth-child(4) form .input:nth-child(4)::before {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #d5d3d3;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+
+.container section article:nth-child(4) form .input input[type='text'] {
+    all: unset;
+    width: calc(100% - 10px);
+    height: 18px;
+    font-size: clamp(1rem, 1.25vw, 1rem);
+    color: #888;
+    background-color: #F6F6F6;
+    border: 2px solid #EEE;
+    border-radius: 6px;
+    padding: 10px 0 10px 48px;
+} 
+
+.container section article:nth-child(4) form .input input[type='text']:placeholder-shown {
+    text-transform: capitalize;
+} 
+
+
+/* Fifth Article */
+.container section article:nth-child(5) form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.container section article:nth-child(5) form .input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.container section article:nth-child(5) form .input input[type='checkbox'] {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+}  
+
+
+.container section article:nth-child(5) form .input label {
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    color: #000;
+    text-transform: capitalize;
+}
+
+.container section article:nth-child(5) form .input label::before { 
+    content: '\f00c';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 14px;
+    /* width: 0px;
+    height: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #0075FF;
+    color: #FFF;
+    border: 1.5px solid #CDCDCD;
+    position: absolute;
+    /* top: 50%; */
+    /* left: 20px; */
+    /* transform: rotate(0deg) translate(-19px, -51%); */
+}
+
+.container section article:nth-child(5) form .input input[type='checkbox']:checked + label::before {
+    transform-origin: center center;
+    animation: rotate-check 0.4s ease-in-out 0s 1 alternate both;
+}
+
+.container section article:nth-child(5) form .input input[type='checkbox']:not(:checked) + label::before {
+    transform-origin: center center;
+    animation: rotate-check-reverse 0.4s ease-in-out 0s 1 alternate-reverse both;
+}
+
+/* Sixth Article */
+
+.container section article:nth-child(6) form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.container section article:nth-child(6) form .input {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.container section article:nth-child(6) form .input:last-child {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #EEE;
+}
+
+.container section article:nth-child(6) form .input input[type='radio'] {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CDCDCD;
+    border-radius: 50%;
+}  
+
+
+.container section article:nth-child(6) form .input label {
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    color: #000;
+    text-transform: capitalize;
+}
+
+
+
+.container section article:nth-child(6) form .input label::before {
+    content: '';
+    border: 2px solid #0075ff;
+    border-radius: 50%;
+    background-color: #0075ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.container section article:nth-child(6) form .input input[type='radio']:checked {
+    border: 2px solid #0075ff;
+}
+
+.container section article:nth-child(6) form .input input[type='radio']:checked + label::before  { 
+    transform-origin: center center;
+    animation: checked-radio 0.4s ease-in-out 0s 1 alternate both;
+}
+.container section article:nth-child(6) form .input input[type='radio']:not(:checked) + label::before { 
+    transform-origin: center center;
+    animation: checked-radio-rev 0.4s ease-in-out 0s 1 alternate-reverse both;
+}
+
+
+.container section article:nth-child(6) footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.container section article:nth-child(6) footer span {
+    flex-basis: 100%;
+    height: 100%;
+    min-height: 80px;
+    padding-bottom: 8px;
+    border: 2px solid #CDCDCD;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: clamp(0.75rem, 1.25vw, 1rem);
+    color: #000;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.container section article:nth-child(6) footer span::before {
+    content: '\f233';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+}
+
+.container section article:nth-child(6) footer span:hover {
+    color: #0075FF;
+    border: 2px solid #0075FF; 
+}
+
+.container section article:nth-child(6) footer span:not(:hover) {
+    border: 2px solid #CDCDCD;
+    color: #000;
+}
+
+
+
+@media (max-width: 1400px) {
+    .container section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    /* First Article */
+    .container section article:first-child form .input .sub-input label {
+        flex-basis: 90%;
+    }
+
+    .container section article:first-child form .input .sub-input .checkbox {
+        flex-basis: 10%;
+        align-self: flex-end;
+    }
+
+    /* Second Article */
+    .container section article:nth-child(2) form .input .sub-input {
+        gap: 10px;
+    }
+    .container section article:nth-child(2) form .input .sub-input input[type='email'] {
+        flex-basis: 85%;
+    }
+    .container section article:nth-child(2) form .input .sub-input a {
+        flex-basis: 15%;
+        align-self: center;
+    }
+
+    /* Third Article */
+    .container section article:nth-child(3) form .input a {
+        flex-basis: 18%;
+        align-self: flex-end;
+    }
+
+
+}
+
+
+@media (max-width: 576px) {
+    .container section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    /* Second Article */
+    .container section article:nth-child(2) form .input .sub-input {
+        gap: 8px;
+    }
+    .container section article:nth-child(2) form .input .sub-input input[type='email'] {
+        flex-basis: 70%;
+        max-width: 150px;
+    }
+
+    .container section article:nth-child(2) form .input .sub-input a {
+        flex-basis: 30%;
+        min-width: fit-content;
+    }
+
+    /* Third Article */
+    .container section article:nth-child(3) form .input a {
+        flex-basis: 30%;
+        min-width: fit-content;
+        align-self: flex-end;
+    }
+}
+/* End Settings */
+
+
+
+
+
+/* Start Animation */
+/* First Article */
+@keyframes pop-up {
+    0% {
+        position: absolute;
+        left: 3px;
+        visibility: visible;
+    }
+    100% {
+        position: absolute;
+        left: calc(80px - 18px);
+        visibility: visible;
+    }
+}
+/* Fifth Article */
+@keyframes rotate-check {
+    0% {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg) translate(19px, 51%);
+    }
+    100% {
+        visibility: visible;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 20px; 
+        transform: rotate(360deg) translate(-19px, -51%);
+    }
+}
+
+@keyframes rotate-check-reverse {
+    0% {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg) translate(19px, 51%);
+    }
+    100% {
+        visibility: visible;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 20px; 
+        transform: rotate(360deg) translate(-19px, -51%);
+    }
+} 
+
+/* Sixth Article */
+
+@keyframes checked-radio {
+    0% {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        top: 10px;
+        left: 10px;
+        transform: translate(0, 0);
+    }
+    100% {
+        visibility: visible;
+        width: 15px;
+        height: 15px;
+        top: 4px;
+        left: 3px;
+        transform: translate(0, 0);
+    }
+} 
+
+@keyframes checked-radio-rev {
+    0% {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        top: 10px;
+        left: 10px;
+        transform: translate(0, 0);
+    }
+    100% {
+        visibility: visible;
+        width: 15px;
+        height: 15px;
+        top: 4px;
+        left: 3px;
+        transform: translate(0, 0);
+    }
+}   
+
+/* End Animation */

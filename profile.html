@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Library - Minified CSS File all.minified.css -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="CSS/profile.css" />
+    <!-- Framework CSS File - Other CSS Components Framework -->
+    <link rel="stylesheet" href="CSS/framework.css" />
+    <!-- Google Fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Dashbord HTML File -->
+    <header class="main-header">
+      <nav>
+        <span>Elzero</span>
+        <ul>
+          <li><a href="index.html">dashboard</a></li>
+          <li><a href="settings.html">settings</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="courses.html">courses</a></li>
+          <li><a href="friends.html">friends</a></li>
+          <li><a href="files.html">files</a></li>
+          <li><a href="plans.html">plans</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <header class="sub-header">
+        <form class="left" action="" method="get">
+          <input type="search" name="" id="" placeholder="Type A Keyword" />
+        </form>
+        <div class="right">
+          <img src="IMG/Dashboard/avatar.png" alt="Avatar" />
+        </div>
+      </header>
+      <div class="container">
+        <h1>Profile</h1>
+        <div class="sections">
+          <section class="profile">
+            <figure>
+              <img src="IMG/Profile/avatar.png" alt="Image" />
+              <h2>Osama Elzero</h2>
+              <figcaption>
+                <span>Level 20</span>
+                <span>550 Rating</span>
+              </figcaption>
+            </figure>
+            <form action="" method="get">
+              <fieldset>
+                <span>General Information</span>
+                <div class="cols">
+                  <div class="name">
+                    <label>Full Name:</label><span>Osama Mohamed</span>
+                  </div>
+                  <div class="gender">
+                    <label>Gender:</label><span>Male</span>
+                  </div>
+                  <div class="country">
+                    <label>Country:</label><span>Egypt</span>
+                  </div>
+                </div>
+                <span class="checkbox">
+                  <input type="checkbox" name="chBoxGen" id="chBoxGen" />
+                  <span class="checked"></span>
+                </span>
+              </fieldset>
+              <fieldset>
+                <span>Personal Information</span>
+                <div class="cols">
+                  <div class="email">
+                    <label>Email:</label><span>o@nn.sa</span>
+                  </div>
+                  <div class="phone">
+                    <label>Phone:</label><span>019123456789</span>
+                  </div>
+                  <div class="date">
+                    <label>Date Of Birth:</label
+                    ><time datetime="25/10/1982">25/10/1982</time>
+                  </div>
+                </div>
+                <span class="checkbox">
+                  <input type="checkbox" name="chBoxPer" id="chBoxPer" />
+                  <span class="checked"></span>
+                </span>
+              </fieldset>
+              <fieldset>
+                <span>Job Information</span>
+                <div class="cols">
+                  <div class="title">
+                    <label>Title:</label><span>Full Stack Developer</span>
+                  </div>
+                  <div class="prog">
+                    <label>Programming Language:</label><span>Python</span>
+                  </div>
+                  <div class="date">
+                    <label>Years Of Experience:</label><span>15+</span>
+                  </div>
+                </div>
+                <span class="checkbox">
+                  <input type="checkbox" name="chBoxJob" id="chBoxJob" />
+                  <span class="checked"></span>
+                </span>
+              </fieldset>
+              <fieldset>
+                <span>Billing Information</span>
+                <div class="cols">
+                  <div class="payment">
+                    <label>Payment Method:</label><span>Paypal</span>
+                  </div>
+                  <div class="email">
+                    <label>Email:</label><span>email@website.com</span>
+                  </div>
+                  <div class="subscribe">
+                    <label>Subscription:</label><span>Monthly</span>
+                  </div>
+                </div>
+                <span class="checkbox">
+                  <input type="checkbox" name="chBoxBill" id="chBoxBill" />
+                  <span class="checked"></span>
+                </span>
+              </fieldset>
+            </form>
+          </section>
+          <section class="skills">
+            <header>
+              <h2>My Skills</h2>
+              <span>Complete Skills List</span>
+            </header>
+            <div class="content">
+              <div class="row-1">
+                <span>HTML</span>
+                <span>Pugjs</span>
+                <span>HAML</span>
+              </div>
+              <div class="row-2">
+                <span>CSS</span>
+                <span>SASS</span>
+                <span>Stylus</span>
+              </div>
+              <div class="row-3">
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+              </div>
+              <div class="row-4">
+                <span>Vuejs</span>
+                <span>Reactjs</span>
+              </div>
+              <div class="row-5">
+                <span>Jest</span>
+                <span>Jasmine</span>
+              </div>
+              <div class="row-6">
+                <span>PHP</span>
+                <span>Laravel</span>
+              </div>
+              <div class="row-7">
+                <span>Python</span>
+                <span>Django</span>
+              </div>
+            </div>
+          </section>
+          <section class="activities">
+            <header>
+              <h2>Latest Activities</h2>
+              <span>Latest Activities Done By The User</span>
+            </header>
+            <div class="articles">
+              <article class="row-1">
+                <img src="IMG/Profile/activity-01.png" alt="Image" />
+                <div class="text">
+                  <div class="left">
+                    <span>Store</span>
+                    <span>Bought The Mastering Python Course</span>
+                  </div>
+                  <div class="right">
+                    <time datetime="18:10">18:10</time>
+                    <span>Yesterday</span>
+                  </div>
+                </div>
+              </article>
+              <article class="row-2">
+                <img src="IMG/Profile/activity-02.png" alt="Image" />
+                <div class="text">
+                  <div class="left">
+                    <span>Academy</span>
+                    <span>Get The PHP Certificate</span>
+                  </div>
+                  <div class="right">
+                    <time datetime="16:05">16:05</time>
+                    <span>Yesterday</span>
+                  </div>
+                </div>
+              </article>
+              <article class="row-3">
+                <img src="IMG/Profile/activity-03.png" alt="Image" />
+                <div class="text">
+                  <div class="left">
+                    <span>Badges</span>
+                    <span>Unlocked The 10 Skills Badge</span>
+                  </div>
+                  <div class="right">
+                    <time datetime="18:05">18:05</time>
+                    <span>Yesterday</span>
+                  </div>
+                </div>
+              </article>
+              <article class="row-4">
+                <img src="IMG/Profile/activity-01.png" alt="Image" />
+                <div class="text">
+                  <div class="left">
+                    <span>Store</span>
+                    <span>Bought The Typescript Course</span>
+                  </div>
+                  <div class="right">
+                    <time datetime="12:05">12:05</time>
+                    <span>Yesterday</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="JS/profile.js"></script>
+    <script src="JS/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/* Scrollbar */
+/* Scrollbar For Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #0075FF #FFF;
+    scroll-behavior: smooth;
+}
+
+
+/* Scroll bar for chrome, safari and edge */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0075FF;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bgc-btns);
+}
+
+/* To Apply Navigation Between Pages by using document.startViewTransition(() => {}) in JS */
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root){
+    animation: fade 2s ease-in-out;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: rotateY(-0.5turn);
+    }
+    100% {
+        opacity: 1;
+        transform:  rotateY(0.5turn);
+    }
+}
+
+
+
+mark {
+    background-color: #09F;
+    font-weight: bold;
+    color: #FFF;
+}
