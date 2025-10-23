@@ -571,7 +571,7 @@ main .friends article footer {
 }
 
 main .friends article footer span {
-    font-size: clamp(0.875rem, 1.25vw, 0.955rem);
+    font-size: clamp(0.70rem, 1.25vw, 0.955rem);
     text-transform: capitalize;
     color: #888;
     font-weight: 500;
@@ -634,7 +634,7 @@ main.removed::after {
 
 main.removed::before {
     content: 'Save Successfully!';
-    font-size: 30px;
+    font-size: clamp(0.875rem, 1.50vw, 1.125rem);
     padding: 40px;
     background-color: #198754;
     color: #FFF;
